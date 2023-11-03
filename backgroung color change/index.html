@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color changer</title>
+    <style>
+
+    </style>
+</head>
+<body>
+  <div id="special">
+    <lable for="">choose color:</lable>
+    <input type="color"  id="color">
+  </div>
+  <script>
+    //input click,focus --->events
+    let colorSet =document.getElementById("color");
+    colorSet.addEventListener("input",backgound)
+    function backgound(){
+        console.log(this)
+        console.log(this.value)
+        document.body.style.background=this.value
+    }
+    // colorSet.oninput =function changeColor(){
+    //     console.log(this)}
+  </script>
+    
+</body>
+</html>
