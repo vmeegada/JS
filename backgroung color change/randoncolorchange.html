@@ -17,28 +17,16 @@
         background: #fe4567;
         transition: background 5s;
       }
-      lable{
+      h2{
         color:white;
       }
 
     </style>
 </head>
 <body>
-  <div id="special">
-    <lable for="">choose color:</lable>
-    <input type="color"  id="color">
-  </div>
+  <h2>Background color change every  1 second</h2>
   <script>
     //input click,focus --->events
-    let colorSet =document.getElementById("color");
-    colorSet.addEventListener("input",backgound)
-    function backgound(){
-        console.log(this)
-        console.log(this.value)
-        document.body.style.background=this.value
-    }
-    // colorSet.oninput =function changeColor(){
-    //     console.log(this)}
 
     //random change means every second change the bg color
 
