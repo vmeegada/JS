@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh
+        }
+        .continer{
+            background: linear-gradient(to right,#9cecfb,#65c9f7,#0052d4);
+            width:30%;
+            border-radius: 10px;
+            padding:60px 0 ;
+            
+        }
+        #timeshow{
+            background-color: #7c7575;
+            width:90%;
+            padding:30px 0;
+            font-size: 35px;
+            text-align: center;
+            /* position ,transfrom(horizental),left  3 properties is used beacause in a box we center content in tne middele we use it */
+            position: relative;
+            transform: translate(-50%);
+            left:50%;
+            color:white;
+            font-family: Verdana,Geneva,Tahoma,sans-serif;
+            border-radius: 20px;
+             box-shadow: 0 0 20px #7c7575;
+
+        } 
+        .button{
+            display: flex;
+           justify-content: space-around;
+           margin-top:60px;
+           }
+        .button button{
+            padding:10px 25px;
+             border:none;
+            background: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer; 
+        }   </style>
+</head>
+<body>
+    <div class="continer">
+      <div id="timeshow"> 00:00:00:000</div>
+                    
+      <div class="button">
+        <button id="start">start</button>
+        <button id="pause">pause</button>
+        <button id="reset">reset</button>
+      </div>
+    </div>
+    <script  src="script.js" ></script>
+</body>
+</html>
